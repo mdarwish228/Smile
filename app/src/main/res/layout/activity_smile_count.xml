@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SmileCount">
+
+    <TextView
+        android:id="@+id/smile_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You Smiled"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/smile_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/smile_title2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Times In Total"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/smile_count"
+        app:layout_constraintVertical_bias="0.25" />
+
+    <TextView
+        android:id="@+id/smile_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="200sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="10" />
+</androidx.constraintlayout.widget.ConstraintLayout>
